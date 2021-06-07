@@ -16,10 +16,10 @@ export const reducer = (state = INITIAL_STATE, action) => {
             return { ...state, isLoading: true, message: '' }
 
         case 'GET_COUNTRIES_SUCCESS':
-            return { ...state, isLoading:false, countries: action.payload }
+            return { ...state, isLoading: false, countries: action.payload }
 
         case 'GET_COUNTRIES_ERROR':
-            return { ...state, isLoading:false, message: action.payload }
+            return { ...state, isLoading: false, message: action.payload }
 
         default: return state
 
